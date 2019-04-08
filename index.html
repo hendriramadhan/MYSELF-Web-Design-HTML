@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Self</title>
+    <link rel="icon" type="image/png" href="images/HENDRI-RAMADHAN.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"  crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="home-top">
+        <div id="header-container">
+        <header>
+            <a href="./index.html">MySelf</a>
+        </header>
+
+        <nav class="navbar">
+            <span class="toggle menu">
+                <a href="#">
+                        <i class="fas fa-ellipsis-v fa-lg"></i>
+                </a>
+            </span>
+           
+            <ul>
+                <li class="toggle menu">
+                    <span class="btn-close"><i class="fas fa-times fa-lg"></i></span>
+                </li>
+                <li>
+                    <a href="#home-top">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#coding">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="main1">
+        <div id="sectionhome1">
+            <h1>Hendri Ramadhan</h1>
+            <h3>Front-End Developer</h3>
+        </div>
+    </div>
+    </div>
+
+    <div id="home">
+        <main id="main-container">
+            <section id="about">
+                <h2>About Me</h2>
+                <div id="card-about">
+                    <img src="images/HENDRI-RAMADHAN.png" alt="Hendri Ramadhan" title="Hendri Ramadhan" class="foto">
+                    <p id="besar">Hai, nama saya Hendri Ramadhan</p>
+                    <p>saya adalah Front-End Developer, saya sangat mencintai dunia desain khususnya desain web, dan desain program. Saya sangat tertarik dengan dunia desain, khususnya
+                            web desain sejak awal tahun 2017, ketika saya mulai menjadi
+                            penulis freelancer di website milik saya sendiri.
+                            Dimana website saya saat itu menggunakan hosting dari
+                            Blogger, dan bisa di desain sesuai keinginan saya. Dalam dunia website, saya adalah orang yang sangat
+                            memperhatikan User Interface, yaitu bagaimana cara agar
+                            desain dari website yang saya kelola, bisa menarik bagi
+                            pengunjung website.</p>
+                </div>
+            </section>
+
+            <section id="coding">
+                <h2>Skills</h2>
+                <div id="grid-coding">
+                    <div class="card1">
+                        <img src="images/icon/html5.png" alt="html5" class="icon">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="card2">
+                        <img src="images/icon/css.png" alt="css" class="icon">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="card3">
+                        <img src="images/icon/sass-1.svg" alt="sass" class="icon">
+                        <p>SASS</p>
+                    </div>
+
+                    <div class="card4">
+                        <img src="images/icon/photoshop.png" alt="photoshop" class="icon">
+                        <p>Photoshop</p>
+                    </div>
+
+                    <div class="card5">
+                        <img src="images/icon/xml.png" alt="XML" class="icon">
+                        <p>XML</p>
+                    </div>
+
+                    <div class="card6">
+                        <img src="images/icon/gulp.svg" alt="Gulp" class="icon">
+                        <p>Gulp</p>
+                    </div>
+
+                    <div class="card7">
+                        <img src="images/icon/js.jpg" alt="Javascript" class="icon">
+                        <p>Javascript</p>
+                    </div>
+
+                    <div class="card8">
+                        <img src="images/icon/Git_icon.svg.png" alt="Git" class="icon">
+                        <p>Git</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Hubungi saya lewat email dan lihat di sosial media berikut ini :</p>
+                <p class="email">tutorialumum@gmail.com</p>
+                <div class="sosmed">
+                    <a href="#"><span class="fab fa-github-alt fa-2x"></span></a>
+                    <a href="#"><span class="fab fa-linkedin-in fa-2x"></span></a>
+                    <a href="#"><span class="fab fa-facebook fa-2x"></span></a>
+                    <a href="#"><span class="fab fa-twitter fa-2x"></span></a>
+                    <a href="#"><span class="fab fa-instagram fa-2x"></span></a>
+                </div>
+            </section>
+
+        </main>
+    
+        <footer id="footer-wrapper">
+            <p >
+                <a href="#" title="Hendri Ramadhan"><img src="images/github.png" alt="Github" class="icon-footer"> View On Github</a>
+            </p>
+        </footer>
+
+    </div> 
+    <a href="#" id="scroll" style="display: none;" title="Back to top"><span class="fas fa-chevron-up fa-2x"></span></a>
+
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="node_modules/lax.js/lib/lax.min.js"></script>
+    <script>
+    window.onload =function(){
+        lax.setup()
+
+        document.addEventListener('scroll',function(e){
+            lax.update(window.scrollY)
+        }, false)
+    }
+    </script>
+
+    <script>
+    
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event){
+
+                if (this.hash !== ""){
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+
+
+</body>
+</html>
